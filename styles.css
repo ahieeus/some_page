@@ -1,93 +1,223 @@
-* {
-    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+*
+{
+    font-family: Roboto;
+    padding: 0px;
+    margin: 0px;
 }
 
-body {
+header
+{
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    justify-content: center;
+    color: white;
+    padding: 0 60px;
+    gap: 400px;
 }
 
-.header {
-    background-color: #1f2937;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px 15px;
-   
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-}
-
-.logo {
-    font-size: 24px;
-    color: #f9faf8;
-    font-weight: bold;
-}
-
-ul {
+.header_links ul
+{
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 16px;
-    gap: 16px;
+    padding: 0;
+    gap: 40px;
 }
 
-a {
-    color: #e5e7eb;
-    text-wrap: wrap;
-    font-size: 18px;
+.header_links a
+{
+    text-decoration: none;
 }
 
-.header-bottom {
+
+header,
+footer,
+.hero_banner
+{
+    background-color: #1f2937;
+}
+
+footer
+{
+    color: white;
+}
+
+.hero_banner
+{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.hero_content
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.right_column img{
+    width: 900;
+    height: 250px;
+} 
+
+.left_column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left_column h1
+{
+    font-size: 48px;
+    width: 400px;
+    color: #F9FAF8;
+}
+
+.left_column p
+{
+    text-wrap: wrap;
+    width: 400px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.left_column button
+{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    padding: 3px 30px;
+    border-radius: 10px;
+}
+
+/* general configuration */
+.section_1,
+.section_2,
+.section_3
+{
+    height: 400px;
+}
+
+.section_1
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.text {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: 900;
+
+.information_blocks
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 100px;
 }
 
-.sub-text {
-    font-size: 18px;
+
+.information_blocks p
+{
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 13px;
+}
+
+.block_content
+{
+    width: 110px;
+    height: 150px;
+    
+}
+
+.block_content img
+{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(65, 65, 253); /*Test porpuses*/
+    border-radius: 10px;
+}
+
+.section_2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbaba;
+}
+
+.quote_text_container
+{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote_text_container p
+{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.quote_text_container h3
+{
+    align-self: flex-end;
+}
+
+.section_3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_3_content
+{
+    width: 900px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #3882f6;
+    border-radius: 10px;
     color: #e5e7eb;
 }
 
-.text,
-.sub-text {
+.section_3_content .left_column 
+{
+    width: 600px;
+}
+
+.section_3_content .left_column p
+{
+    font-size: 16px;
+    width: 600px;
     text-wrap: wrap;
 }
 
-button {
-    background-color: #2882f6;
-    border-radius: 10px;
-    padding: 5px 15px;
-    color: #f9faf8;
-    font-weight: bold;
-}
-
-
-
-image {
-    max-width: 600px;
-    max-height: 300px;
-}
-
-.content {
-    
+.section_3_content .right_column button
+{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
     background-color: #3882f6;
+    
+    color: #e5e7eb;
+    border: 2px solid white;
 }
 
-.footer {
-    background-color: #1f2937;
-    color: #e5e7eb;
+footer
+{
     text-align: center;
+    padding: 40px;
+
 }
